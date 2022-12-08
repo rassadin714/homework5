@@ -50,7 +50,7 @@ public class Main {
     public static void task4(){
         System.out.println("Задача 4");
 
-        int deliveryDistance = 101;
+        int deliveryDistance = 100;
         int deliveryDay = 1;
         if (deliveryDistance > 20){
             deliveryDay++;
