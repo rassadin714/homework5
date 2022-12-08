@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -5,6 +7,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1(){
         System.out.println("Задача 1");
@@ -46,7 +49,48 @@ public class Main {
     }
     public static void task4(){
         System.out.println("Задача 4");
-        int deliveryDistance = 95;
 
+        int deliveryDistance = 101;
+        int deliveryDay = 1;
+        if (deliveryDistance > 20){
+            deliveryDay++;
+        }
+        if (deliveryDistance > 60){
+            deliveryDay++;
+        }
+        System.out.println("Потребуется дней: " + deliveryDay);
+
+    }
+    public static void task5(){
+        System.out.println("Задача 5");
+
+        int monthNumber = 12;
+        switch (monthNumber){
+            case 1:
+            case 2:
+                System.out.println("Сезон зимы");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Сезон весны");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Сезон лета");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Сезон осени");
+                break;
+            case 12:
+                System.out.println("Сезон зимы");
+                break;
+            default:
+                System.out.println("Такого месяца не сущевствует");
+
+        }
     }
 }
